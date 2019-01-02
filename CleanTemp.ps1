@@ -1,7 +1,7 @@
 ﻿Set-ExecutionPolicy unrestricted
 ######################################################################
 # Script vider les fichers temporaire
-# version: 1.0
+# version: 1.1
 # Auteur: tiphergane / Meoowrwa
 # Synopsis: Effacer les différents répertoires de fichiers temporaire.
 # Usage: dans un powershell en mode admin, executer le script pour faire le ménage
@@ -9,7 +9,7 @@
 
 function CleanTemp {
     #Pour effacer le contenu du repertoire sans distinction d'extensions
-    del *
+    Remove-Item *
 }
 
 function testrep {
