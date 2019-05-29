@@ -18,6 +18,7 @@ function testrep {
     if (Test-Path -Path $repertoire)
     {
     #et si oui alors on le vide
+    Write-Output "Nettoyage de $repertoire en cours…"
     Set-Location -Path $repertoire
     CleanTemp
     }
